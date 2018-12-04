@@ -1,0 +1,11 @@
+{
+    "require": {
+       "phpoffice/phpword": "dev-master",
+       "gears/pdf":"*"
+    },
+    "scripts":
+    {
+	"post-install-cmd": ["PhantomInstaller\\Installer::installPhantomJS"],
+	"post-update-cmd": ["PhantomInstaller\\Installer::installPhantomJS"]
+    }
+}
